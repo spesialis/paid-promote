@@ -1,0 +1,27 @@
+{
+  "name": "spesialis-paid-promote",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "yarn build && yarn start",
+    "start": "node ./dist/main.js",
+    "build": "prettier -w . && tsc"
+  },
+  "dependencies": {
+    "@grammyjs/conversations": "^1.2.0",
+    "dotenv": "^16.3.1",
+    "envalid": "^8.0.0",
+    "grammy": "^1.23.1",
+    "mongoose": "^8.4.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/node-cron": "^3.0.11",
+    "@types/node-fetch": "^2.6.11",
+    "prettier": "^3.2.3",
+    "typescript": "^5.3.3"
+  }
+}
